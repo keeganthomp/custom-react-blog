@@ -7,17 +7,15 @@ export default class AllPosts extends Component {
         blogPosts : []
     }
     componentWillMount = () => {
-        getBlogPosts().then((data) => {
+        this.state.blogPosts.length === 0 && getBlogPosts().then((data) => {
             const blogPosts = data.data.objects
-            console.log('DATAA::', data.data.objects)
             this.setState({ blogPosts })
-            console.log('STATEEE:::', this.state)
         })
     }
     render() {
         const { blogPosts } = this.state
         return (
-            <div className='blog-post-container'>
+            <div className='blog-posts'>
             {blogPosts && blogPosts.map(post => {
                 return <BlogPost key={post._id} blogPost={post}/>
             })}

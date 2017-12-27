@@ -1,22 +1,42 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import '../styles/navigation.scss'
+import "../styles/navigation.scss";
+import classNames from 'classnames';
+
 
 export default class Navbar extends Component {
+  constructor (props) {
+    super()
+    this.state = {
+      isMobileActive: false
+    }
+  }
   render() {
+    const navigationItemsClass = classNames('navigation-items', {
+      'navigation-items-visible':  this.state.isMobileActive
+    })
     return (
-      <div className='nav-wrapper'>
-        <li>
-          <ul>
+      <div className='navigation'>
+        <ul className={navigationItemsClass}>
+          <li className='navigation-items-item'>
             <Link to="/">Home</Link>
-          </ul>
-          <ul>
+          </li>
+          <li className='navigation-items-item'>
             <Link to="/blog">Blog</Link>
-          </ul>
-          <ul>
+          </li>
+          <li className='navigation-items-item'>
             <Link to="/about">About</Link>
-          </ul>
-        </li>
+          </li>
+        </ul>
+          <div className='overlay-thing' />
+        <span
+          className="navigation-mobile-icon"
+          onClick={() => {
+            this.setState({ isMobileActive: !this.state.isMobileActive });
+          }}
+        >
+          &#9776;
+        </span>
       </div>
     );
   }
