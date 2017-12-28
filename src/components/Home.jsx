@@ -4,7 +4,7 @@ import julia from '../images/julia-pic.jpeg'
 
 export default class Homepage extends Component {
   render() {
-      console.log('DIRNAME::', __dirname)
+  console.log('PROPSS::', this.props)
     return (
       <div>
         <div className="home">

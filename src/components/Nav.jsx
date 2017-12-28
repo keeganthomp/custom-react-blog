@@ -19,12 +19,18 @@ export default class Navbar extends Component {
       <div className='navigation'>
         <ul className={navigationItemsClass}>
           <li className='navigation-items-item'>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => {
+            this.setState({ isMobileActive: false });
+          }}>Home</Link>
           </li>
-          <li className='navigation-items-item'>
+          <li className='navigation-items-item'onClick={() => {
+            this.setState({ isMobileActive: false });
+          }}>
             <Link to="/blog">Blog</Link>
           </li>
-          <li className='navigation-items-item'>
+          <li className='navigation-items-item'onClick={() => {
+            this.setState({ isMobileActive: false });
+          }}>
             <Link to="/about">About</Link>
           </li>
         </ul>
