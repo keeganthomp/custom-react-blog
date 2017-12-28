@@ -21,20 +21,19 @@ export default class Navbar extends Component {
           <li className='navigation-items-item'>
             <Link to="/" onClick={() => {
             this.setState({ isMobileActive: false });
-          }}>Home</Link>
+          }}>home</Link>
           </li>
           <li className='navigation-items-item'onClick={() => {
             this.setState({ isMobileActive: false });
           }}>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog">blog</Link>
           </li>
           <li className='navigation-items-item'onClick={() => {
             this.setState({ isMobileActive: false });
           }}>
-            <Link to="/about">About</Link>
+            <Link to="/about">about</Link>
           </li>
         </ul>
-          <div className='overlay-thing' />
         <span
           className="navigation-mobile-icon"
           onClick={() => {

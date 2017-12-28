@@ -10,6 +10,7 @@ export default class AllPosts extends Component {
         this.state.blogPosts.length === 0 && getBlogPosts().then((data) => {
             const blogPosts = data.data.objects
             this.setState({ blogPosts })
+            console.log('DONEEE:::')
         })
     }
     render() {

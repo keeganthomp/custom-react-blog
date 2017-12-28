@@ -6,7 +6,6 @@
   &-title {
     text-align: center;
     font-family: "Julius Sans One";
-    color: #b784a7;    
   }
 }
 .blog-post {
@@ -15,9 +14,11 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     font-family: "Julius Sans One";
+    margin: .5rem 0;
   }
   &-content {
     font-size: 0.75rem;
+    margin-bottom: 1.5rem;
   }
   &-linebreak {
     display: block;
@@ -37,5 +38,6 @@
   }
   &-date {
     font-size: 0.75rem;
+    margin: 0;
   }
 }

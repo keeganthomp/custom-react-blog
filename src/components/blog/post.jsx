@@ -7,11 +7,11 @@ export default class BlogPost extends Component {
     return (
       <div className="blog-post">
         <h3 className="blog-post-title">{blogPost.title}</h3>
+        <p className='blog-post-date' ><b>Date Written:</b> {createdDate}</p>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: blogPost.content }}
         />
-        <p className='blog-post-date' ><b>Date Written:</b> {createdDate}</p>
       </div>
     );
   }
