@@ -6,7 +6,6 @@ export default class About extends Component {
   render() {
     return (
       <div className="about">
-        <h1 className='about-title'>About Me</h1>
         <img className="about-image" src={juliaAndKeegan} alt="" />
         <p className="about-content">
           Some Sentances about who you are, go more in depth here than on the
