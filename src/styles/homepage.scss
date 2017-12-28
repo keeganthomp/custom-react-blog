@@ -1,0 +1,23 @@
+.home {
+  margin: 0 12rem;
+  @media screen and (max-width: 600px) {
+      margin: 0 1rem;
+    }
+  &-title {
+    font-family: 'Julius Sans One';
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1rem;
+  }
+  &-image {
+    display: block;
+    margin: auto;
+    max-width: 25rem;
+    @media screen and (max-width: 600px) {
+      max-width: 18rem;
+    }
+  }
+  &-content {
+    font-size: .75rem;
+  }
+}
