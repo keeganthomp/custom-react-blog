@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import Blog from "./blog/";
 import About from "./About";
+import Login from "./Login.jsx"
 import "../styles/app.scss";
 import Homepage from "./Home";
 import { Route } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Nav";
 
+
 class App extends Component {
+
   render() {
     return (
       <BrowserRouter>
@@ -22,6 +25,7 @@ class App extends Component {
           <Route exact path="/" component={Homepage} />
           <Route path="/blog" component={Blog} />
           <Route path="/about" component={About} />
+          <Route path="/protected" component={Login} />
         </div>
       </BrowserRouter>
     );
