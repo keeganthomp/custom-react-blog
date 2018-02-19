@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <h1 className="home-title">Julias Blog</h1>
+          <h1 className="home-title">Julias Poo</h1>
           <div className='social-container'>
             <a className='social-container-link' href="https://www.facebook.com/julia.severino.thompson"><i className="social-container-item fa fa-facebook" aria-hidden="true" /></a>
             <a className='social-container-link' href="https://www.instagram.com/julescapade/"><i className="social-container-item fa fa-instagram" aria-hidden="true" /></a>
