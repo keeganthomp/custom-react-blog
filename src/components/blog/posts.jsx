@@ -8,10 +8,8 @@ export default class AllPosts extends Component {
     }
     componentWillMount = () => {
         this.state.blogPosts.length === 0 && getBlogPosts().then((data) => {
-            console.log('DATAAAA:::', data)
             const blogPosts = data.data.objects
             this.setState({ blogPosts })
-            console.log('DONEEE:::')
         })
     }
     render() {
@@ -22,6 +20,6 @@ export default class AllPosts extends Component {
                 return <BlogPost key={post._id} blogPost={post}/>
             })}
             </div>
-        );
+        )
     }
 }
