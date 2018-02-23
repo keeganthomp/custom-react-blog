@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 import julia from "../images/j_beach_leather.JPG";
-=======
-import juliaAndKeegan from "../images/julia-k-pic.jpg";
->>>>>>> d2dae86bca916b6c58e7067a858855313c846f4a
 import "../styles/about.scss";
 
 export default class About extends Component {
