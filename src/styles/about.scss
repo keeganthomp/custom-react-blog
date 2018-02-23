@@ -8,9 +8,9 @@
   }
   &-title {
     text-align: center;
-    font-family: "Julius Sans One";
+    font-family: "Arimo";
   }
-  &-image {
+  &_image {
     display: block;
     margin: auto;
     max-width: 25rem;
@@ -18,7 +18,10 @@
       max-width: 18rem;
     }
   }
-  &-content {
-    font-size: 0.75rem;
+  &_content {
+    text-align: center;
+    p {
+      font-size: 1rem;
+    }
   }
 }

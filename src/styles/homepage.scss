@@ -7,7 +7,7 @@
       margin: 0 1rem;
     }
   &-title {
-    font-family: 'Julius Sans One';
+    font-family: 'Petit Formal Script', 'cursive';
     font-size: 3rem;
     text-align: center;
     letter-spacing: 1rem;
@@ -23,9 +23,9 @@
       max-width: 19rem;
     }
   }
-  &-content {
-    font-size: .75rem;
-    margin: 1rem 0 3rem 0;    
+  &_content {
+    font-size: 1rem;
+    margin: 1rem 0 3rem 0;
     @media screen and (max-width: 600px) {
       margin: 1rem 1rem;
     }
